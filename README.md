@@ -8,7 +8,7 @@ Microsoft SQL Server 데이터베이스에 저장하는 데이터 적재 프로�
 
 ## JavaScript 스크립트별 역할
 
-### 1. 데이터 수집 (Data Collection)
+### 1. 데이터 수집 (Fetch Data)
 
 #### `fetchAssemblyData.js` - 국회 기본 데이터 수집기
 
@@ -36,7 +36,7 @@ Microsoft SQL Server 데이터베이스에 저장하는 데이터 적재 프로�
 - **API 호출**: VCONFBILLCONFLIST API로 회의 정보 조회
 - **생성 파일**: `assembly_bills_conference_api_results.json`
 
-### 2. 파일 관리 (File Management)
+### 2. 파일 다운로드 (Download File)
 
 #### `downloadConferencePdfs.js` - 회의록 PDF 문서 다운로더
 
@@ -59,7 +59,7 @@ Microsoft SQL Server 데이터베이스에 저장하는 데이터 적재 프로�
 - **역할**: 파일명 정규화 (6번째 언더스코어 이후 불필요한 텍스트 제거)
 - **생성 파일**: `pdf_rename_results_actual_*.json` (파일명 변경 작업 결과)
 
-### 3. 데이터베이스 로딩 (Database Loading)
+### 3. 데이터베이스 로딩 (Load Database)
 
 #### `loadMainDataToDatabase.js` - 주요 데이터 DB 적재기
 
