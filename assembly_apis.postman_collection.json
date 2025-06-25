@@ -1,0 +1,427 @@
+{
+	"info": {
+		"_postman_id": "bad04720-412f-4854-9ea4-3323cf1e5662",
+		"name": "국회 API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "7314000"
+	},
+	"item": [
+		{
+			"name": "국회의원 정보 통합",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://open.assembly.go.kr/portal/openapi/ALLNAMEMBER?KEY={key}&Type=json&pIndex=1&pSize=1000",
+					"protocol": "https",
+					"host": [
+						"open",
+						"assembly",
+						"go",
+						"kr"
+					],
+					"path": [
+						"portal",
+						"openapi",
+						"ALLNAMEMBER"
+					],
+					"query": [
+						{
+							"key": "KEY",
+							"value": "{key}"
+						},
+						{
+							"key": "Type",
+							"value": "json"
+						},
+						{
+							"key": "pIndex",
+							"value": "1"
+						},
+						{
+							"key": "pSize",
+							"value": "1000"
+						},
+						{
+							"key": "NAAS_CD",
+							"value": "{naas_cd}",
+							"disabled": true
+						},
+						{
+							"key": "NAAS_NM",
+							"value": "{naas_nm}",
+							"disabled": true
+						},
+						{
+							"key": "PLPT_NM",
+							"value": "{plpt_nm}",
+							"disabled": true
+						},
+						{
+							"key": "BLNG_CMIT_NM",
+							"value": "{blng_cmit_nm}\n",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "역대 국회의원 현황",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://open.assembly.go.kr/portal/openapi/nprlapfmaufmqytet?KEY={key}&Type=json&pIndex=1&pSize=1000&DAESU=10",
+					"protocol": "https",
+					"host": [
+						"open",
+						"assembly",
+						"go",
+						"kr"
+					],
+					"path": [
+						"portal",
+						"openapi",
+						"nprlapfmaufmqytet"
+					],
+					"query": [
+						{
+							"key": "KEY",
+							"value": "{key}"
+						},
+						{
+							"key": "Type",
+							"value": "json"
+						},
+						{
+							"key": "pIndex",
+							"value": "1"
+						},
+						{
+							"key": "pSize",
+							"value": "1000"
+						},
+						{
+							"key": "DAESU",
+							"value": "10"
+						},
+						{
+							"key": "DAE",
+							"value": "{dae}",
+							"disabled": true
+						},
+						{
+							"key": "DAE_NM",
+							"value": "{dae_nm}",
+							"disabled": true
+						},
+						{
+							"key": "NAME",
+							"value": "{name}",
+							"disabled": true
+						},
+						{
+							"key": "BIRTH",
+							"value": "{birth}",
+							"disabled": true
+						},
+						{
+							"key": "BON",
+							"value": "{bon}",
+							"disabled": true
+						},
+						{
+							"key": "POSI",
+							"value": "{posi}\n",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "국회의원 인적사항",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://open.assembly.go.kr/portal/openapi/nwvrqwxyaytdsfvhu?KEY={key}&Type=json&pIndex=1&pSize=1000",
+					"protocol": "https",
+					"host": [
+						"open",
+						"assembly",
+						"go",
+						"kr"
+					],
+					"path": [
+						"portal",
+						"openapi",
+						"nwvrqwxyaytdsfvhu"
+					],
+					"query": [
+						{
+							"key": "KEY",
+							"value": "{key}"
+						},
+						{
+							"key": "Type",
+							"value": "json"
+						},
+						{
+							"key": "pIndex",
+							"value": "1"
+						},
+						{
+							"key": "pSize",
+							"value": "1000"
+						},
+						{
+							"key": "HG_NM",
+							"value": "{hg_nm}",
+							"disabled": true
+						},
+						{
+							"key": "POLY_NM",
+							"value": "{poly_nm}",
+							"disabled": true
+						},
+						{
+							"key": "ORIG_NM",
+							"value": "{orig_nm}",
+							"disabled": true
+						},
+						{
+							"key": "CMITS",
+							"value": "{cmits}",
+							"disabled": true
+						},
+						{
+							"key": "SEX_GBN_NM",
+							"value": "{sex_gbn_nm}",
+							"disabled": true
+						},
+						{
+							"key": "MONA_CD",
+							"value": "{mona_cd}\n",
+							"disabled": true
+						},
+						{
+							"key": "DAE",
+							"value": "{dae}",
+							"disabled": true
+						},
+						{
+							"key": "DAE_NM",
+							"value": "{dae_nm}",
+							"disabled": true
+						},
+						{
+							"key": "NAME",
+							"value": "{name}",
+							"disabled": true
+						},
+						{
+							"key": "BIRTH",
+							"value": "{birth}",
+							"disabled": true
+						},
+						{
+							"key": "BON",
+							"value": "{bon}",
+							"disabled": true
+						},
+						{
+							"key": "POSI",
+							"value": "{posi}\n",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "국회의원 발의법률안",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://open.assembly.go.kr/portal/openapi/nzmimeepazxkubdpn?KEY={key}&Type=json&pIndex=1&pSize=1000",
+					"protocol": "https",
+					"host": [
+						"open",
+						"assembly",
+						"go",
+						"kr"
+					],
+					"path": [
+						"portal",
+						"openapi",
+						"nzmimeepazxkubdpn"
+					],
+					"query": [
+						{
+							"key": "KEY",
+							"value": "{key}"
+						},
+						{
+							"key": "Type",
+							"value": "json"
+						},
+						{
+							"key": "pIndex",
+							"value": "1"
+						},
+						{
+							"key": "pSize",
+							"value": "1000"
+						},
+						{
+							"key": "BILL_ID",
+							"value": "{bill_id}",
+							"disabled": true
+						},
+						{
+							"key": "BILL_NO",
+							"value": "{bill_no}",
+							"disabled": true
+						},
+						{
+							"key": "BILL_NAME",
+							"value": "{bill_name}",
+							"disabled": true
+						},
+						{
+							"key": "COMMITTEE",
+							"value": "{committee}",
+							"disabled": true
+						},
+						{
+							"key": "PROC_RESULT",
+							"value": "{proc_result}",
+							"disabled": true
+						},
+						{
+							"key": "AGE",
+							"value": "{age}",
+							"disabled": true
+						},
+						{
+							"key": "PROPOSER",
+							"value": "{proposer}",
+							"disabled": true
+						},
+						{
+							"key": "COMMITTEE_ID",
+							"value": "{committee_id}\n",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "국회의원 본회의 표결정보",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://open.assembly.go.kr/portal/openapi/nojepdqqaweusdfbi?KEY={key}&Type=json&pIndex=1&pSize=1000&BILL_ID=PRC_K2I4J0H6I1G2H1P1P3N1M2N8L9L3T3&AGE=22",
+					"protocol": "https",
+					"host": [
+						"open",
+						"assembly",
+						"go",
+						"kr"
+					],
+					"path": [
+						"portal",
+						"openapi",
+						"nojepdqqaweusdfbi"
+					],
+					"query": [
+						{
+							"key": "KEY",
+							"value": "{key}"
+						},
+						{
+							"key": "Type",
+							"value": "json"
+						},
+						{
+							"key": "pIndex",
+							"value": "1"
+						},
+						{
+							"key": "pSize",
+							"value": "1000"
+						},
+						{
+							"key": "BILL_ID",
+							"value": "PRC_K2I4J0H6I1G2H1P1P3N1M2N8L9L3T3"
+						},
+						{
+							"key": "AGE",
+							"value": "22"
+						},
+						{
+							"key": "HG_NM",
+							"value": "{hg_nm}",
+							"disabled": true
+						},
+						{
+							"key": "POLY_NM",
+							"value": "{poly_nm}",
+							"disabled": true
+						},
+						{
+							"key": "MEMBER_NO",
+							"value": "{member_no}",
+							"disabled": true
+						},
+						{
+							"key": "VOTE_DATE",
+							"value": "{vote_date}",
+							"disabled": true
+						},
+						{
+							"key": "BILL_NO",
+							"value": "{bill_no}",
+							"disabled": true
+						},
+						{
+							"key": "BILL_NAME",
+							"value": "{bill_name}",
+							"disabled": true
+						},
+						{
+							"key": "CURR_COMMITTEE",
+							"value": "{curr_committee}",
+							"disabled": true
+						},
+						{
+							"key": "RESULT_VOTE_MOD",
+							"value": "{result_vote_mod}",
+							"disabled": true
+						},
+						{
+							"key": "CURR_COMMITTEE_ID",
+							"value": "{curr_committee_id}",
+							"disabled": true
+						},
+						{
+							"key": "MONA_CD",
+							"value": "{mona_cd}",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
