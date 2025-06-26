@@ -2,9 +2,7 @@
 
 ## 프로젝트 개요
 
-국회 공개API를 활용하여 법안 정보, 의원 정보, 회의록 등을 수집하고
-
-Microsoft SQL Server 데이터베이스에 저장하는 데이터 적재 프로젝트입니다.
+국회 공개API를 활용하여 법안 정보, 의원 정보, 회의록 등을 수집하고 Microsoft SQL Server 데이터베이스에 저장하는 데이터 적재 프로젝트입니다.
 
 ## JavaScript 스크립트별 역할
 
@@ -94,7 +92,7 @@ Microsoft SQL Server 데이터베이스에 저장하는 데이터 적재 프로�
 
 | 파일명 | 설명 |
 |--------|------|
-| `assembly_bills_api_results_temp.json` | 표결 데이터 임시 결과 |
+| `assembly_bills_api_results.json`, `assembly_bills_api_results_temp.json` | 표결 데이터 결과 |
 | `assembly_bills_summary_fallback.json` | API 결과 요약 |
 | `assembly_bills_conference_api_results.json` | 회의 데이터 결과 |
 
@@ -110,7 +108,7 @@ Microsoft SQL Server 데이터베이스에 저장하는 데이터 적재 프로�
 | 파일명 | 설명 |
 |--------|------|
 | `package.json` | Node.js 프로젝트 설정 |
-| `assembl_ apis.postman_collection.json` | Postman 컬렉션 |
+| `assembly_apis.postman_collection.json` | Postman 컬렉션 |
 
 ## 주요 의존성 관계
 
