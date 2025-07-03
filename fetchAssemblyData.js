@@ -1,5 +1,6 @@
 const axios = require('axios');
 const fs = require('fs').promises;
+require('dotenv').config();
 
 const APIs = [
   {
@@ -26,7 +27,7 @@ const APIs = [
   }
 ];
 
-const API_KEY = '84d2bb829a0d413b97da6e9d2809db9e';
+const API_KEY = process.env.API_KEY;
 const PAGE_SIZE = 1000;
 
 async function fetchAPIData(api) {

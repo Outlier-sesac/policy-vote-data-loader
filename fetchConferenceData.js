@@ -1,6 +1,7 @@
 const fs = require('fs').promises;
 const path = require('path');
 const axios = require('axios');
+require('dotenv').config();
 
 async function loadFilteredBillsAndCallConfAPI() {
   try {
@@ -18,7 +19,7 @@ async function loadFilteredBillsAndCallConfAPI() {
     console.log(`Found ${filteredData.data.length} bills to process`);
     
     const apiResults = [];
-    const API_KEY = '84d2bb829a0d413b97da6e9d2809db9e';
+    const API_KEY = process.env.API_KEY;
     const BASE_URL = 'https://open.assembly.go.kr/portal/openapi/VCONFBILLCONFLIST';
     
     // Process bills in batches to avoid overwhelming the API
